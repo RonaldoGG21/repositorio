@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string = "This is a test";
+
+        
+    function lowerUpper(word) {  
+        return word.split(" ").map((el)=>{/*vvv ["this","is","a","test"] vvv*/       
+            return el.split("").map((els,int)=>{/*vvv ["t","h","i","s"] vvv*/
+                return int%2 == 0 ? els.toUpperCase() : els.toLowerCase()/*vvv ["T","h","I","s"] vvv*/    
+            }).join("")/*vvv ThIs vvv*/        
+        }).join(" ")/*vvv ThIs Is A TeSt vvv*/
+    }
+
+        console.log(lowerUpper(string))
+    </script>
+</body>
+</html>

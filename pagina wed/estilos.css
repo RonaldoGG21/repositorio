@@ -1,0 +1,39 @@
+:root{
+    --color-1:#ff2356;
+    --letra-1:#ffffff;
+    --color-2:#aaaaff;
+    --letra-2:#4b3dbc;
+    --tamanio-1:35px;
+    --tamanio-2:60px;
+}
+
+body{
+    background-color: #23af90;
+}
+
+.caja{
+    margin: auto;
+    width: 50em;
+}
+
+.cj{
+    
+    margin: 10px auto;
+    border: 10px double black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rojo{
+    padding: var(--tamanio-1);
+    background-color: var(--color-1);
+    color: var(--letra-1);
+}
+
+.verde{
+    padding: var(--tamanio-2);
+    background-color: var(--color-2);
+    color: var(--letra-2);
+}

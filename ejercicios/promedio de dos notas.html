@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        let conta = 0
+        do {
+            conta = parseInt(prompt("diga el numero de notas a plasmar: "))
+        } while (conta >20 || conta<1);
+      
+            document.write('yupiii!!!!')
+      let suma = 0
+      let prom = 0
+       for(let i=0;i<conta;i++){
+        let nota = parseInt(prompt(`${i+1}. nota: `))
+        suma+=nota
+       }
+       prom = suma/conta
+       console.log(typeof(prom));
+       if(prom>90){
+        document.write(`Felicidades tienes un Promedio de ${prom} SIGUE ASI!!!`)
+       }else if(prom>80){
+        document.write(`Tu promedio fue de ${prom} puedes mejorar!!!`)
+       }else if(prom>70) {
+        document.write(`Tu promedio fue de ${prom} has un poco mas de esfuerzo!!!`)
+       }else{
+        document.write(`Porque tu calificacion es de ${prom}? granola TRABAJA DURO!!!`)
+       }
+    </script>
+  </body>
+</html>

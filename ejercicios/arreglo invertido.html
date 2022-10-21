@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* super sensillo, solo tienes que invertir el for */
+
+        let arr ="ronaldo"
+        let ss = []
+        /* arreglo normal */
+        console.log("arreglo normal");
+        for(let i =0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+
+        /* arreglo invertido */
+        console.log("arreglo invertido");
+        for(let i = arr.length-1;i>=0;i--){
+            ss.push(arr[i])
+        }
+
+        console.log(ss.join(""));
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   /* operadores rest - reduce */
+  /*     function suma(...p){
+        for(let i=0;i<p.length;i++){
+          p = p.reduce((acc,x)=>acc+=x)
+        }
+        return p
+      }
+
+      console.log(suma(1,2,3,4)) */
+
+      /* operadores rest - filter */ 
+   /*    function filtro(...p){
+        for(let i=0;i<p.length;i++){
+          p = p.filter(x=> x != 5)
+        }
+        return p
+      }
+
+      console.log(filtro(1,2,3,4,5,6,7)) */
+
+      /* operadores rest - filter */
+     /*  function mapa(...p){
+        for(let i=0;i<p.length;i++){
+          p = p.map(x=> x != 5)
+        }
+        return p
+      }
+
+      console.log(filtro(1,2,3,4,5,6,7)) */
+
+      /*  TU ESTAS OBSERVANDO CON QUE NIVEL ESTAS HABLANDOOOOOO?????? EHHHHHHHHHHHH EHHHHHHHH EHHHHHHHHHHH CON EL DUROOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO DEMASIADO FUERTEEEEEEEEEE FULL FUCKING POWER */
+      function narcissistic(value) {
+  // Code me to return true or false
+  let longValue = value.toString().length
+  let arrayValue = value.toString().split("")
+   arrayValue = arrayValue.map(x=>x=parseInt(x))
+  let a = []
+   a = arrayValue.map(x=>x**longValue)
+  
+   a = a.reduce((acc,x)=>acc+=x)
+  
+  if(a==value){
+    return true
+  }
+    return false
+
+}
+    
+
+
+
+
+
+/*         function narcissistic(value) {
+    // Code me to return true or false
+    let longValue = value.toString().length
+   
+    let a = []
+    a = value.map(x=>x^4) 
+    
+    a = a.reduce((acc,x)=>acc+=x)
+    
+    if(a==value){
+      return true
+    }
+      return false
+
+  }
+
+  console.log(narcissistic(123));
+
+  /* let value = 123
+  let a = value.toString().split("")
+  a = a.map(x=>x+x)
+
+  console.log(a);
+
+  let b = "23"
+   console.log(b);
+   b= parseInt(b)
+   console.log(b); */
+    </script>
+</body>
+</html>

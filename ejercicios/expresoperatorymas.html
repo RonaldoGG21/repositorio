@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //funcion constructora
+     function persona(nombre,apellido,edad){
+        this.nombre = nombre
+        this.apellido = apellido
+        this.edad = edad
+     }
+
+     let cantidad = parseInt(prompt("digite la cantidad de personas que quiera dijitar: "))
+     let arr =[]
+
+     for(let i=0;i<cantidad;i++){
+        let nombre = prompt(`${i+1}. digite su Nombre: `)
+        let apellido = prompt(`${i+1}. digite su Apellido: `)
+        let edad = prompt(`${i+1}. digite su Edad: `)
+
+        //nuevo constructor
+        arr.push(new persona(nombre,apellido,edad))
+     }
+
+     console.table(arr);
+    </script>
+</body>
+</html>

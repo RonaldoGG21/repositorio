@@ -1,0 +1,55 @@
+#titulo{
+    font-size: 50px;
+}
+
+
+/*boton uno*/
+
+#botonone{
+    margin: 20px;
+    margin-bottom: 0;
+    position: relative;
+    padding: 10px 20px;
+    background-color: brown;
+    text-align: center;
+    color: aliceblue;
+    width: 80px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    transition: .3s;
+}
+
+#botonone:hover{
+    padding: 12px 22px;
+    cursor: pointer;
+}
+
+#botonone:active{
+    padding: 10px 20px;
+}
+
+/*boton dos*/
+
+#botontwo{
+    margin: 20px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(42, 50, 165);
+    text-align: center;
+    color: aliceblue;
+    width: 80px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    transition: .3s;
+}
+
+#botontwo:hover{
+    padding: 12px 22px;
+    cursor: pointer;
+}
+
+#botontwo:active{
+    padding: 10px 20px;
+}
