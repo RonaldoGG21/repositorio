@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //prototipo padre
+        function Animal(nombre,tipo) {
+            this.nombre = nombre
+            this.tipo = tipo
+        }
+
+        Animal.prototype.saludar = function() {
+            console.log(`mi nombre es ${this.nombre} y soy ${this.tipo}`);
+        }
+        
+
+        //prototipo hijo
+        function perro(nombre,tipo,tamanio) {
+            this.herencia = Animal;
+            this.herencia(nombre,tipo);
+            this.tamanio = tamanio
+        }
+
+        //heredando los atributos y metodos de la funcion constructora Animal
+        //agregandola Animal al prototipo de perro
+        perro.prototype = new Animal()
+        perro.prototype.constructor = perro
+
+        //sobre escribiendo una funcion de la funcion constructora Animal
+        perro.prototype.ladrar = function() {
+            console.log(`soy un perro y mi nombre es ${this.nombre}`);
+        }
+
+        perro.prototype.pupi = function(){
+            console.log(`soy de tipo ${this.tipo} y mi raza es ${this.tamanio}`);
+        }
+
+        let ronaldo = new perro("Ronaldo","mamifero","grande")
+        let elmejor = new Animal("Ronaldinio","elMejor")
+
+        console.log(elmejor);
+        console.log(ronaldo);
+        elmejor.saludar()
+        ronaldo.ladrar()
+        ronaldo.pupi()
+    </script>
+</body>
+</html>
