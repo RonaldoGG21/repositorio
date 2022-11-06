@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //crear pequeña base de datos con prototipos(clases)
+
+        /* crear la base relacionales */
+        /* crear un array donde guardara los datos */
+        /* crear un Bucle donde dijitaremos */
+        /* crear un registro de dijito */
+        /* Guardarlo en un array */
+        /* Imprimir el array en console.tablet() */
+
+        function persona(nombre, apellido,edad) {
+            this.nombre = nombre
+            this.apellido = apellido
+            this.edad = edad
+        }
+
+        let arreglo = []
+        let arr = []
+        let numPersonas = 3
+
+        for(let i=0;i<numPersonas;i++){
+            let nombre = prompt(`nombre: `)
+            let apellido = prompt(`apellido: `)
+            let edad = prompt(`edad: `)
+
+            let registro = new persona(nombre,apellido,edad)
+
+            arreglo.push(registro)
+            
+        }
+
+        console.table(arreglo);
+    </script>
+</body>
+</html>

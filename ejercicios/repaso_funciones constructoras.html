@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //funcion COnstructora persona
+        function persona(Nombre,Apellido,Metas) {
+            this.Nombre = Nombre
+            this.Apellido = Apellido
+            this.Metas = Metas
+        }
+
+        //creacion y asignacion de funcion al prototipo de la funcion constructora "persona"
+        persona.prototype.elmejor = function() {
+           return `${this.Nombre} ${this.Apellido} es el mejor en ${this.Metas}`
+        }
+
+        //declarando los valores que tendran las variables
+        ronaldo = new persona("Ronaldo","Garcia","El mejor")
+
+        //llamando esta funcion perteneciente en el prototipo persona
+        console.log(ronaldo.elmejor());
+   
+    </script>
+</body>
+</html>
