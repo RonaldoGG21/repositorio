@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 3.0.8 Escribir un diagrama para un programa que calcule e imprima el coeficiente binomial (3/0) */
+        /* variables */
+        let n = 3
+        let r = 1
+        let nc = n
+        let rc = r
+
+        /* contador */
+        let con = r
+
+        /* acumulador */
+        let accn = 1
+        let accr = 1
+
+        /* resultado */
+        let resultado = 0
+
+        if(r>0){
+            /* coeficiente binomial */
+            for(i=0;i<con;i++){
+                accn*=n
+                accr*=r
+                n-=1
+                r-=1
+            }
+            resultado = accn/accr
+
+        }else{
+
+            resultado = 0
+        }
+
+        console.log(`El binomial del coeficiente de: (${nc}/${rc}) es igual a: ${resultado}`);
+
+    </script>
+</body>
+</html>

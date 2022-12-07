@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Escribir un diagrama para un programa que calcule e imprima el coeficiente biomial (7/4) 
+        El bioma de un coefisiente es (n/r) = nCr singinica "de n elementos se eligen r"
+
+        En matemáticas, los coeficientes binomiales, números combinatorios o combinaciones son números estudiados en combinatoria que corresponden al número de formas en que se puede extraer subconjuntos a partir de un conjunto dado
+        
+        EXPLICADO CON MIS PALABRAS
+
+        en otras palabras la r es el exponente del factorial de n y r, si r es el factorial de r 
+        ejemplo:  n=5 r=2 (5/2) el factorial de 5 se sacara hasta la cantidad de r que es dos: 5*4 =20 igual el 2: 2*1: 2 y se dibiden los resultados (20/2):10*/
+
+        /* Variables */
+        let n = 5
+        let r =2
+
+        /* copia de variables */
+        let nc = n
+        let rc = r
+
+        /* contador */
+        let con =r
+
+        /* Acumuladores */
+        let accn = 1 
+        let accr = 1
+
+        /* resultado */
+        let resultado = 0
+
+        /* bucle para sacar el biomial de un coefisiente */
+        for(i =0;i<con;i++){
+            accn*=n
+            accr*=r
+            r-=1
+            n-=1
+        }
+
+        resultado = accn/accr
+        
+        console.log(`El coefisiente biomial de (${rc}/${nc}) es igual a ${resultado}`);
+    </script>
+</body>
+</html>

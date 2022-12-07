@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* GETTER AND SETTER */
+        /* permite declarar atributos fuera de la creacion del objeto a base de la clase */
+        /* nos permite obtener y estableser los valores de atributos de nuestra clase */
+
+        class CualidadPersona{
+            constructor(nombre, caracteristica){
+                this.nombre = nombre
+                this.caracteristica = caracteristica
+                this.fuerza = null
+            }
+
+            presentacion(){
+                console.log(`mi nombre es ${this.nombre} tengo  y mis cualidades son ${this.CualidadPersona}`);
+            }
+
+            get getFuerza(){
+                return this.fuerza
+            }
+
+            set setFuerza(fuerza){
+                this.fuerza = fuerza
+            }
+        }
+
+
+        let arrGood= ["bueno", "amable", "cariñoso", "bondadoso"]
+        let arrBad= ["malo", "despiadado", "arrogante", "egosentrico"]
+        
+        let ronaldo = new CualidadPersona("ronaldo",)
+        let ronaldobad = new CualidadPersona("the Bad",arrBad)
+
+        console.log(ronaldo);
+        ronaldo.presentacion()
+
+
+        ronaldobad.presentacion()
+        ronaldobad.setFuerza = "1212"
+        console.log(ronaldobad.getFuerza)
+    </script>
+</body>
+</html>

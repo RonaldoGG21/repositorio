@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 3.1.6 Escribir un diagrama para un programa que determine y despliegue en pantalla la suma que recibe un individuo que ha tomado un prestamo de RD$5,000 a un banco, para pagarlo en 6 meses, si el tipo de descuento es de 8% simple
+        SR = C (1 - T * D )
+
+        Descripcion de variables
+        SR - suma recivida
+        DC - descuento calculado
+        C - capital
+        I - interes
+        D - descuento
+        T - tiempo*/
+        /* Descripcion de variables */
+        let c = 5000,
+            d = 8/100,
+            t = 6/12
+            let SR = c*(1-d*t)
+            let DC = c*(d*t)
+
+            console.log(`suma recibida ${SR} descuento calculado ${DC}`);
+    </script>
+</body>
+</html>
