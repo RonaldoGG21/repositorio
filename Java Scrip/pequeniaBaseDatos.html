@@ -25,9 +25,24 @@
 
         let arreglo = []
         let arr = []
-        let numPersonas = 3
+        let confirmacion = ""
 
-        for(let i=0;i<numPersonas;i++){
+        let nombre = prompt(`nombre: `)
+            let apellido = prompt(`apellido: `)
+            let edad = prompt(`edad: `)
+
+            let registro = new persona(nombre,apellido,edad)
+
+            arreglo.push(registro)
+
+        while(confirmacion == ""){
+
+            confirmacion = prompt("si quiere terminar de digitar coloque S: ")
+            if(confirmacion != ""){
+                console.log("Gracias por su servicio");
+                break
+            }
+
             let nombre = prompt(`nombre: `)
             let apellido = prompt(`apellido: `)
             let edad = prompt(`edad: `)
@@ -35,6 +50,8 @@
             let registro = new persona(nombre,apellido,edad)
 
             arreglo.push(registro)
+            
+            
             
         }
 

@@ -23,13 +23,14 @@
                 console.log(`mi nombre es ${this.nombre} tengo  y mis cualidades son ${this.CualidadPersona}`);
             }
 
-            get getFuerza(){
+            set setfuerza(fuerza){
+                this.fuerza = fuerza
+            }
+
+            get getfuerza(){
                 return this.fuerza
             }
 
-            set setFuerza(fuerza){
-                this.fuerza = fuerza
-            }
         }
 
 
@@ -44,8 +45,10 @@
 
 
         ronaldobad.presentacion()
-        ronaldobad.setFuerza = "1212"
-        console.log(ronaldobad.getFuerza)
+        ronaldobad.setfuerza = "30,000 de poder"
+        console.log(ronaldobad.getfuerza)
+
+     
     </script>
 </body>
 </html>

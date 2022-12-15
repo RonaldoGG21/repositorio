@@ -6,30 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style =" background-color: black;">
     <script>
+        /* sumar los numeros enteros y imprimir su resultado
+        ej: 102 = 1+0+2 = 3, 4444 = 4+4+4+4 =16 */
+      let num = "102 123 4444 99 2000"
+      
         function peso(num) {
-         num = num.trim().split(" ").map(Number)
-         let acc =0
-            /* return num.map((el)=>{
-                
-               return el.split("").map(Number).reduce((acc,elm)=>{
-                return acc+elm
-               })
-            }).join(" ") */
-
-            for(let i=0;i<num.length;i++){
-                let num2 = num[i]
-              
-                for(let j=0;j<num2.length;j++){
-                  console.log(num2);
-                }
-            }
-            return 
-            }
             
-        console.log(peso("103 123 4444 99 2000"));
+            return num.split(" ").map(x=>{
+              x=x.split("").map(Number)
+             return x.reduce((acc,elm)=> acc+=elm)
+           }).join(" ")
+           
+        }
 
+            console.log(peso(num));
+            
+
+
+            
     </script>
 </body>
 </html>

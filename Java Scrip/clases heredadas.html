@@ -21,8 +21,20 @@
         }
       }
 
-      const sacha = new Persona("sacha",19,"arquitecta")
+      class Mujer extends Persona{
+        constructor(nombre,edad,profesion,tamanio){
+          super(nombre,edad,profesion)
+          this.tamanio = tamanio
+        }
+
+        text(){
+          return `tu nombre es ${this.nombre} tengo ${this.edad} de edad y mi profesion es ${this.profesion} y mi tamaño es ${this.tamanio}`
+        }
+      }
+      const sacha = new Mujer("sacha",19,"arquitecta",23.4)
       const ronaldo = new Persona("Ronaldinio",20,"ingeniero en sistemas")
+
+      console.log(sacha.text());
  
 
     </script>

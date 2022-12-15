@@ -5,4 +5,11 @@ if 5<3:
 
 print("popi")
 
-for
+num = 34
+con = 0
+acc = 0
+for i in range(num):
+    con=con+1
+    acc+=con
+        
+print(acc)
