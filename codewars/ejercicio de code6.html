@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* This time no story, no theory. The examples below show you how to write function accum:
+
+        Examples:
+        accum("abcd") -> "A-Bb-Ccc-Dddd"
+        accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+        accum("cwAt") -> "C-Ww-Aaa-Tttt" */
+
+       
+            // your code
+            s = "ZpglnRxqenU"
+            let acc = ""
+            let arr = []
+            s = s.split("")
+            for(let i=0;i<s.length;i++){
+                con = s[i]
+                for(let j = 0; j<s[i];j++){
+                    arr.push(con[j])
+                }
+            }
+            
+            console.log(arr);
+
+
+    </script>
+</body>
+
+</html>

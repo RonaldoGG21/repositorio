@@ -27,6 +27,8 @@
 .c1{
     display: block;
     background-color: aqua;
+    outline: solid 4px black;
+    outline-offset: 3px;
     width:auto;
     padding: 20px;
     height: 10px;

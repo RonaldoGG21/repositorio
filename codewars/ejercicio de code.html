@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/* Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
+
+In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell). */
+
+// ESTO ES JAVA SCRIPT
+
+dna = "ATTGC"
+
+function DNS(dna) {
+    
+    dne = []
+    
+    dna = dna.split("")
+    
+    for(let i=0;i<dna.length;i++){
+        if(dna[i] == "A"){
+            dna[i] = "T"
+        }else if(dna[i] == "T"){
+            dna[i] = "A"
+        }else if(dna[i] == "C"){
+            dna[i] = "G"
+        }else if(dna[i] == "G"){
+            dna[i] = "C"
+        }
+        dne.push(dna[i])
+    }
+    
+    dne = dne.join("")
+    return dne
+}
+
+console.log(DNS(dna));
+    </script>
+</body>
+</html>
